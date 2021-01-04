@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="Resources/CSS/sweetalert2.css">
+    <link rel="stylesheet" href="Resources/CSS/animate.min.css">
+    <link rel="stylesheet" href="Resources/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/CSS/Estilos.css">
+</head>
+<body id="PLogin">
+    <div id="log-in" class="container text-center p-5 animate__animated animate__fadeInDown animate__slower">
+        <img src="Resources/IMG/Login.svg" class="w-25" alt="Img">
+        <h3 class="mb-3">Inicio de Sesión</h3>
+        <form action="#" class="p-3" id="InicioSesion">
+            <div class="form-floating mb-4">
+                <input type="text" id="Cedula" class="form-control Solonumeros block-enter" id="floatingInput" placeholder="Cedula" maxlength="10">
+                <label for="floatingInput">Cédula</label>
+            </div>
+            <div class="form-floating mb-4">
+                <input type="password" id="Pass" class="form-control" id="floatingPassword" placeholder="Contraseña" maxlength="20">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" id="btnsend">ENTRAR</button>
+        </form>
+    </div>
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="Modal-aggpass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <form action="#" id="Form-aggpass">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Agregar Contraseña</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-4">
+                                <input type="password" id="CPass" class="form-control" placeholder="Contraseña" maxlength="20">
+                                <label for="CPass">Contraseña</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="password" id="CPass-two" class="form-control" placeholder="Contraseña" maxlength="20">
+                                <label for="CPass-two">Confirmar Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+  <!-- Modal -->
+
+    <div id="Piedepagina" class="w-100 bg-dark p-2 text-center">
+        <p class="text-muted">Desarrollado por <a href="#">Jorbeth Díaz</a> y <a href="#">Jesús Alvarez</a>. &copy;2021.</p>
+    </div>
+
+    <script src="Resources/JS/sweetalert2.min.js"></script>
+    <script src="Resources/JS/bootstrap.min.js"></script>
+    <script src="Resources/JS/jquery-3.3.1.min.js"></script>
+    <script src="Resources/JS/wow.min.js"></script>
+    <script src="Resources/JS/Login.js"></script>
+
+
+</body>
+</html>
