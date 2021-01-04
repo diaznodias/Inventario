@@ -8,7 +8,7 @@ $(function(){
             setTimeout(function(){cerrar_loader()},2000);
         });
     // CERRAR PRELOADER DESPUES DE CARGAR
-
+    console.log("HOLA");
     actualizar_dolar();
 
     new WOW().init();
